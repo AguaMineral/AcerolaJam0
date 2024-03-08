@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgfwb60lkw1ku"]
+
+[ext_resource type="PackedScene" uid="uid://1jmmaxy7c0pl" path="res://scenes/news_card/news_card_texture_rect.tscn" id="1_ataer"]
+[ext_resource type="Texture2D" uid="uid://bb4krhpdq5gcs" path="res://assets/background_test.png" id="1_rl8qm"]
+
+[node name="MainBoard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_rl8qm")
+stretch_mode = 2
+
+[node name="Board" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 90.0
+offset_top = 141.0
+offset_right = -12.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NewsCardRect" parent="Board" instance=ExtResource("1_ataer")]
+layout_mode = 1
+offset_left = 63.0
+offset_top = 28.0
+offset_right = 133.0
+offset_bottom = 69.0
+
+[node name="NewsCardRect2" parent="Board" instance=ExtResource("1_ataer")]
+layout_mode = 1
+offset_left = 302.0
+offset_top = 55.0
+offset_right = 372.0
+offset_bottom = 96.0

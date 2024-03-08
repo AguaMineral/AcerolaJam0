@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://1jmmaxy7c0pl"]
+
+[ext_resource type="Texture2D" uid="uid://ohxfq3s1udno" path="res://assets/news__card_sprite.png" id="1_l0ill"]
+[ext_resource type="Script" path="res://scenes/news_card/news_card_texture_rect.gd" id="2_j5fdg"]
+[ext_resource type="FontFile" uid="uid://din8x50ia623o" path="res://fonts/pixel_operator/PixelOperator8.ttf" id="3_qloav"]
+
+[node name="NewsCardRect" type="TextureRect"]
+offset_right = 70.0
+offset_bottom = 41.0
+texture = ExtResource("1_l0ill")
+stretch_mode = 2
+script = ExtResource("2_j5fdg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qloav")
+theme_override_font_sizes/font_size = 8
+text = "TEST"
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qloav")
+theme_override_font_sizes/font_size = 8
+text = "TEST"
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qloav")
+theme_override_font_sizes/font_size = 8
+text = "TEST"
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qloav")
+theme_override_font_sizes/font_size = 8
+text = "TEST"
+
+[node name="Label5" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_qloav")
+theme_override_font_sizes/font_size = 8
+text = "TEST"

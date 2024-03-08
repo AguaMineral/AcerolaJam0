@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcmiyoru20aic"]
+
+[ext_resource type="Texture2D" uid="uid://bb4krhpdq5gcs" path="res://assets/background_test.png" id="1_v8xis"]
+[ext_resource type="PackedScene" uid="uid://bkw2r7tqmhqtg" path="res://scenes/news_card/news_card.tscn" id="2_6x60b"]
+
+[node name="Main" type="Node2D"]
+texture_filter = 1
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_v8xis")
+centered = false
+
+[node name="NewsCard" parent="." instance=ExtResource("2_6x60b")]
+position = Vector2(138, 173)
